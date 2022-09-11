@@ -11,37 +11,61 @@
 
 <body>
     <header>
-        <div class="headings">
+        <div class="header1">
             <h1>Code Quiz</h1>
+        </div>
+        <div class="subheader">
             <h2>Answer the questions before time runs out!<h2>
-                <!-- Start button -->   
-                <button class="start-button">Start</button>
         </div>
     </header>
 
     <main>
-    <!-- Timer -->
-    <section>
-        <div class= "timer">
-            <div class = "timer-text">
-            <div class="large-font timer-count">30</div>
-            <h3>Seconds Remaining</h3>
-          </div>
-    </section>
+        <!-- High scores link and timer -->
+        <section class="timerhs">
+            <div class="timerhs">
+                <div id="viewHS">
+                    <a href="#">View High Scores</a>
+                </div>
+                <div id="timer">
+                    <p> Time: 60</p>
+                </div>
+            </div>
+        </section>
 
-     <!-- Questions -->
-     <section>
-        <div class="">
+        <!-- Start button -->
+        <section class="start-button">
+            <div id="start-button">
+                <button class="button">Start</button>
+            </div>
+        </section>
 
-        </div>
-    </section>
+        <!-- Questions -->
+        <section class="questions" id="questions">
+            <div>
+                <div>
+                    <h3 id="askq">Question:</h3>
+                    <ul>
+                        <li><button class="selection button" id="answer1" value="a">Answer1</button></li>
+                        <li><button class="selection button" id="answer2" value="b">Answer2</button></li>
+                        <li><button class="selection button" id="answer3" value="c">Answer3</button></li>
+                        <li><button class="selection button" id="answer4" value="d">Answer4</button></li>
+                    </ul>
+                    <div>
 
-    <!-- Game over -->
+                        <!--question check-->
+                        <div id="check_line">
+                            <p>Correct or Wrong</p>
+                        </div>
+        </section>
 
-    <!-- Name and score -->
+
+        <!-- Game over -->
+
+        <!-- Name and score -->
 
     </main>
     <script scr="./assets/js/script.js"></script>
 </body>
+<footer></footer>
 
 </html>

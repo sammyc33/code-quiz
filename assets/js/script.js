@@ -1,8 +1,3 @@
-//Define variables
-var score = document.querySelector(".score");
-var timerElement = document.querySelector(".timer-count");
-var startButton = document.querySelector(".start-button");
-
 //Var array with questions and answers 
 var questions = [
     {
@@ -15,14 +10,21 @@ var questions = [
         choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
         answer: "parentheses"
     },
-    {
-        title: "Arrays in Javascript can be used to store ____.",
-        choices: ["numbers and strings", "other arrays", "booleans", "all of the above"],
-        answer: "all of the above"
-    },
 ];
 
-//Start game starts the game when the start button is clicked
+//Define remaining variables
+var correctAns = 0;
+var questionNum = 0;
+var scoreResult;
+var questionIndex = 0;
+var score = document.querySelector(".score");
+var timerElement = document.querySelector(".timer-count");
+var startButton = document.querySelector(".start-button");
+
+
+
+// Clicking start button starts the timer and game begins
+
 
 //Timer
 
