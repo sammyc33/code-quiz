@@ -11,37 +11,90 @@
     color: var(--void);
 }
 
+* a:hover {
+    color: var(--bleen);
+}
+
 header {
     display: flexbox;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
+    width: 99%;
     text-align: center;
+}
+
+.start-button {
+    background-color: var(--bleen);
+    width: 100px;
+    height: 40px;
+    font-size: medium;
+    border-radius: 5px;
+    color: white;
+}
+
+.timerhs {
+margin-top: 15px;
 }
 
 body {
     display: flex;
-    width: 100%;
+    width: 99%;
     flex-direction: column;
+    
 }
 
-.button {
+main {
+    flex: 1 0 auto;
+    margin-left:400px;
+    margin-right:200px;
+}
+
+/* Hide everything but the header */
+.questions, .end, .score-display {
+    display: none;
+}
+
+/*Sets button color for all but the answer selectors and startu button to the color bleen, with a medium font, sets button text to white*/
+.submit-button, .back-button, .clear-button {
     background-color: var(--bleen);
     width: 100px;
     font-size: medium;
+    border-radius: 5px;
+    justify-items: center;
+    color: white;
 }
 
-.button:hover {
+/* */
+.start-button:hover,
+.submit-button:hover, .back-button:hover, .clear-button:hover {
+    background-color: var(--sage);
+    color: var(--bleen);
+}
+
+/*hide the bullet points from multiple choice section*/
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 50px;
+   }
+
+li {
+    margin-bottom: 10px;
+}
+
+/* */
+.a-button {
+    background-color: white;
+    font-size: medium;
+    border-radius: 5px;
+}
+
+/* */
+.a-button:hover {
     background-color: var(--sage);
 }
 
-.timerhs {
-    display: flexbox;
-    flex-wrap: wrap;
-    margin: 50px;
-}
-
-.timerhs a:hover {
- color: var(--bleen);
-}
-
+ 

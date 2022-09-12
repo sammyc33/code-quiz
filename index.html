@@ -11,61 +11,78 @@
 
 <body>
     <header>
-        <div class="header1">
+        <div class="header">
             <h1>Code Quiz</h1>
         </div>
         <div class="subheader">
-            <h2>Answer the questions before time runs out!<h2>
+            <h2>See if you can answer the questions before time runs out!<h2>
+        </div>
+        <p class="introtext">Click the start button to test your skill.</p>
+        <!-- Start button -->
+        <div class="button">
+            <div id="start-button">
+                <button class="start-button">Start</button>
+            </div>
+        </div>
+        <!-- High scores link and game timer -->
+        <div class="timerhs">
+            <div id="viewHS">
+                <a href="#Leaderboard">High Scores</a>
+            </div>
+            <div id="timer">
+                <p> Time: 60 s</p>
+            </div>
         </div>
     </header>
 
     <main>
-        <!-- High scores link and timer -->
-        <section class="timerhs">
-            <div class="timerhs">
-                <div id="viewHS">
-                    <a href="#">View High Scores</a>
-                </div>
-                <div id="timer">
-                    <p> Time: 60</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Start button -->
-        <section class="start-button">
-            <div id="start-button">
-                <button class="button">Start</button>
-            </div>
-        </section>
-
-        <!-- Questions -->
+        
+        <!-- Question / Answer UL button clickers -->
         <section class="questions" id="questions">
-            <div>
-                <div>
-                    <h3 id="askq">Question:</h3>
-                    <ul>
-                        <li><button class="selection button" id="answer1" value="a">Answer1</button></li>
-                        <li><button class="selection button" id="answer2" value="b">Answer2</button></li>
-                        <li><button class="selection button" id="answer3" value="c">Answer3</button></li>
-                        <li><button class="selection button" id="answer4" value="d">Answer4</button></li>
-                    </ul>
-                    <div>
+            <h3 id="askq">Question:</h3>
+            <ul>
+                <li><button class="a-button" id="answer1" value="a">Q1</button></li>
+                <li><button class="a-button" id="answer2" value="b">Q2</button></li>
+                <li><button class="a-button" id="answer3" value="c">Q3</button></li>
+                <li><button class="a-button" id="answer4" value="d">Q4</button></li>
+            </ul>
 
-                        <!--question check-->
-                        <div id="check_line">
-                            <p>Correct or Wrong</p>
-                        </div>
+            <!-- Answer check -->
+            <div id="check_line">
+                <p>Right or Wrong</p>
+            </div>
         </section>
-
 
         <!-- Game over -->
+        <section class="end" id="end">
+            <h3 id="gameover">Game over!</h3>
+            <p id="yourscore">Your score is: </p>
+            <!-- Type initials in form box -->
+            <p>Add your initials
+                <input id="initials">
+                <button class="submit-button" id="submit-button">Submit</button>
+            </p>
+        </section>
 
-        <!-- Name and score -->
+        <!-- Leaderboard display -->
+        <section class="score-display" id="score-display">
+            <div>
+                <h3>High Scores</h3>
+                <div class="leaderboard">
+                    <p id="leaderboard">Leaderboard</p>
+                </div>
+                <div>
+                    <button class="back-button" id="back-button">Go back</button>
+                    <button class="clear-button" id="clear-button">Clear Scores</button>
+                </div>
+            </div>
+        </section>
+
 
     </main>
     <script scr="./assets/js/script.js"></script>
 </body>
-<footer></footer>
+<br> <br>
+<footer> Footer! </footer>
 
 </html>
