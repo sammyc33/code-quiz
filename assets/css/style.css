@@ -33,25 +33,27 @@ header {
 }
 
 .timerhs {
-margin-top: 15px;
+    margin-top: 15px;
 }
 
 body {
     display: flex;
     width: 99%;
     flex-direction: column;
-    
+
 }
 
 main {
     flex: 1 0 auto;
-    margin-left:400px;
-    margin-right:200px;
+    margin-left: 400px;
+    margin-right: 200px;
 }
 
 
 /*Sets button color for all but the answer selectors and start button to the color bleen, with a medium font, sets button text to white*/
-.submit-button, .back-button, .clear-button {
+.submit-button,
+.back-button,
+.clear-button {
     background-color: var(--bleen);
     width: 100px;
     font-size: medium;
@@ -62,7 +64,9 @@ main {
 
 /* */
 .start-button:hover,
-.submit-button:hover, .back-button:hover, .clear-button:hover {
+.submit-button:hover,
+.back-button:hover,
+.clear-button:hover {
     background-color: var(--sage);
     color: var(--bleen);
 }
@@ -75,7 +79,7 @@ ul {
     flex-direction: column;
     align-items: baseline;
     padding-left: 50px;
-   }
+}
 
 li {
     margin-bottom: 10px;
@@ -92,5 +96,3 @@ li {
 .a-button:hover {
     background-color: var(--sage);
 }
-
- 
