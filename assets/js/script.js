@@ -29,10 +29,12 @@ var questions = [
 
 //Define remaining variables and elements
 var timer;
-var 
+var initials;
 
 var startBtn = document.querySelector("#start-button");
 var timerEL = document.querySelector("#timer");
+var initialsEL = document.querySelector("#initials");
+var submitBtn = document.querySelector("#submit-button");
 
 // Clicking start button starts the timer and game begins
 function startQuiz() {
@@ -44,7 +46,7 @@ function startQuiz() {
 function startTimer() {
     timer = setInterval(function() {
         timerCount--;
-        timerElement.textContent = timerCount;
+        timerEl.textContent = timerCount;
         if (timerCount >= 0) 
 }, 1000);
 }
@@ -57,7 +59,7 @@ function askQuestions() {
 
 //End game, display game over!
 
-//Add initials and score, click submit to save both (init function?)
+//Save initials and score by clicking Submit(init function?)
 
 // Go back
 
