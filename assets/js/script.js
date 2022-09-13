@@ -63,7 +63,7 @@ function askQuestions() {
 
 // Go back
 
-// Clear Scores
+// Click the Clear button to clear the high scores
 
 // Event listener to call the startQuiz function
 startBtn.addEventListener("click", startQuiz);
