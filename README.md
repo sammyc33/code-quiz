@@ -37,7 +37,7 @@ When you click the start button, the 60 second countdown will begin. You'll be p
 ## Deployed Page
 
 ---
-https://sammyc33.github.io/code-quiz/
+https://sammyc33.github.io/code-quiz
 
 ## License
 
