@@ -49,12 +49,8 @@ main {
     margin-right:200px;
 }
 
-/* Hide everything but the header */
-.questions, .end, .score-display {
-    display: none;
-}
 
-/*Sets button color for all but the answer selectors and startu button to the color bleen, with a medium font, sets button text to white*/
+/*Sets button color for all but the answer selectors and start button to the color bleen, with a medium font, sets button text to white*/
 .submit-button, .back-button, .clear-button {
     background-color: var(--bleen);
     width: 100px;
